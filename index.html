@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" media="all">
+    <script src="https://kit.fontawesome.com/9cf569ac70.js" crossorigin="anonymous"></script>
+    <title>Hireup</title>
+</head>
+<body>
+    <div class="container shadowLight">
+       
+            <div class="left-box box whiteText">
+                <img class="logo-img" src="./Logo_balloon_white.png" alt="" width="60">
+                <div class="box-content left-box-content">
+                    <div class="card whiteText">
+                        <i class="fa-solid fa-briefcase whiteText"></i>
+                        <span class="stats whiteText">52</span> Jobs Available
+                    </div>
+                    <div class="card whiteText">
+                        <i class="fa-solid fa-sack-dollar whiteText"></i>
+                        <span class="stats whiteText">£100,932 </span> Total Bonus 
+                    </div>
+                    <div class="card whiteText">
+                        <i class="fa-solid fa-sack-dollar whiteText"></i>
+                        <i class="fa-solid fa-sack-dollar yellowText promoted-icon"></i>
+                        <span class="stats whiteText">10</span> Promoted Jobs
+                    </div>
+                    
+                </div>
+
+                <div class="app-container">
+                    <div class="qr-img shadow">
+                        <img class="qr" src="/qr.png" alt="">
+                    </div>
+                    
+                    <div class="qr-content ">
+                        <h5 class="whiteText">Download The App </h5>
+                        <p class="whiteText">Download the HireUp app to get real-time referral updates</p>
+                        <i class="fa-solid fa-arrow-up whiteText marginTop10" id="arrowUp"></i>
+                    </div>
+                </div>
+
+                <div class="app-screenshot">
+                    <div class="app-wrapper">
+                        <i class="fa-solid fa-arrow-down shadow" id="arrowDown"></i>
+                        <img src="./phoneScreen.png" alt="">
+                    </div>
+                </div>
+            
+            </div>
+            <div class="right-box box">
+                <div class="box-content">
+                    <div class="loginSection ">
+                        <!-- Login -->
+                        <div class="loginForm">
+                            <div class="font24px extraBoldText centerText marginBottom50">Login</div>
+                
+                            <div class="group" style="margin-bottom: 40px;">
+                              <label class="font14px">Email</label>
+                              <input type="text" name="email" class="newInput validateText marginTop10" required="">
+                            </div>
+                
+                            <div class="group" style="margin-bottom: 40px;">
+                              <label class="font14px">Password</label>
+                              <div class="posRel">
+                                  <div class="show_hide_password clickable"><i class="far fa-eye" aria-hidden="true"></i></div>
+                                  <input type="password" name="password" id="pw_newpassword" class="newInput validateText marginTop10 password" required="">
+                              </div>
+                            </div>
+                
+                            <div class="raisedButton red shadowLight ripple-effect loginButton" style="max-width: 100%;">Login</div>
+                
+                            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;" class="marginTop20">
+                                <div class="font14px"><span class="clickable greenText boldText forgotPassword">Forgot password?</span></div>
+                            </div>
+                
+                            <div class="font14px centerText marginTop40">Want to register an account? <span class="clickable greenText boldText registerAccount">Get started</span></div>
+                        </div>
+                
+                        <!-- Register Account -->
+                        <div class="registerForm dNone">
+                            <div class="font24px extraBoldText centerText marginBottom50">Register your account</div>
+                            
+                            <div class="marginBottom20">
+                                <div class="raisedButton red shadowLight ripple-effect horizontalCenter employeeRegister">Get Started</div> 
+                            </div>
+                
+                            <div class="font12px lightText marginBottom20 centerText">Or</div>
+                
+                            <div class="font14px centerText line25px marginBottom40">Visit <a class="clickable greenText boldText" href="https://hireuponline.com/" target="_blank">www.hireuponline.com</a> to register as a company</div>
+                
+                            <div class="font14px centerText"><span class="clickable greenText boldText backToLogin">Back to login</span></div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+    
+<script>
+    let appScreenshot = document.querySelector('.app-screenshot');
+    document.getElementById('arrowUp').addEventListener('click', function(){
+        appScreenshot.style.top = 0;
+    });
+
+    document.getElementById('arrowDown').addEventListener('click', function(){
+        appScreenshot.style.top = '100%';
+    });
+
+</script>
+</body>
+
+
+</html>
